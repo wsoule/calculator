@@ -1,3 +1,31 @@
-body {
-    background-color: red;
+.center-screen {
+    border: 5px solid black; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#number-area {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: right;
+    justify-content: end;
+    align-items: end;
+    display: flex;
+}
+.buttons{
+    display:flex;
+    margin-bottom: 3px;
+    font-size: 20px;
+    width: 91px;
+    height: 91px;
+}
+
+.button-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 364px;
 }
