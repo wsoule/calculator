@@ -6,23 +6,23 @@
   </head>
   <body>
     <div class="center-screen">
-      <p id="number-area">Hello World!</p>
-      <button id="clear" class="buttons">C</button>
+      <p id="number-area">0</p>
+      <button id="clear" class="buttons" onclick="clearClick()">C</button>
       <div class="button-area">
-        <button id="7" class="buttons">7</button>
-        <button id="8" class="buttons">8</button>
-        <button id="9" class="buttons">9</button>
+        <button id="7" class="buttons" onclick="numberClick(7)">7</button>
+        <button id="8" class="buttons" onclick="numberClick(8)">8</button>
+        <button id="9" class="buttons" onclick="numberClick(9)">9</button>
         <button id="divide" class="buttons">÷</button>
-        <button id="4" class="buttons">4</button>
-        <button id="5" class="buttons">5</button>
-        <button id="6" class="buttons">6</button>
+        <button id="4" class="buttons" onclick="numberClick(4)">4</button>
+        <button id="5" class="buttons" onclick="numberClick(5)">5</button>
+        <button id="6" class="buttons" onclick="numberClick(6)">6</button>
         <button id="multiply" class="buttons">X</button>
-        <button id="1" class="buttons">1</button>
-        <button id="2" class="buttons">2</button>
-        <button id="3" class="buttons">3</button>
+        <button id="1" class="buttons" onclick="numberClick(1)">1</button>
+        <button id="2" class="buttons" onclick="numberClick(2)">2</button>
+        <button id="3" class="buttons" onclick="numberClick(3)">3</button>
         <button id="minus" class="buttons">-</button>
-        <button id="0" class="buttons">0</button>
-        <button id="." class="buttons">.</button>
+        <button id="0" class="buttons" onclick="numberClick(0)">0</button>
+        <button id="." class="buttons" onclick="numberClick('.')">.</button>
         <button id="=" class="buttons">=</button>
         <button id="+" class="buttons">+</button>
       </div>
