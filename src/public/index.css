@@ -1,5 +1,7 @@
 .center-screen {
+    background-color: aqua;
     border: 5px solid black; 
+    border-radius: 5px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -7,6 +9,7 @@
 }
 
 #number-area {
+    background-color: aquamarine;
     font-size: 50px;
     margin-top: 0px;
     margin-bottom: 5px;
