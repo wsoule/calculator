@@ -6,31 +6,26 @@ function updateNumber(addNum){
     const screenNum = document.getElementById('number-area').innerText.toString();
     if(screenNum.indexOf('0') === 0 && !screenNum.includes('.') && newNum){
         if(addNum === '.'){
-            console.log('addNum === ');
             document.getElementById('number-area').innerHTML = '0'+addNum;
             newNum = false;
         } else{
-            console.log('addNum ===  - else');
             document.getElementById('number-area').innerHTML = addNum.toString();
             newNum = false;
         }
     } else if(newNum){
         if(addNum === '.'){
-            console.log('addNum ===     new num');
             document.getElementById('number-area').innerHTML = '0'+addNum;
             newNum = false;
         } else{
-            console.log('addNum ===     new num else');
             document.getElementById('number-area').innerHTML = addNum.toString();
             newNum = false;
         }
     }else{
+        //prefix with 0
         if(addNum === '.' && (screenNum.indexOf('+') === screenNum.length-1 || screenNum.indexOf('—') === screenNum.length-1 || screenNum.indexOf('/') === screenNum.length-1 || screenNum.indexOf('*') === screenNum.length-1)){
-            console.log('big ass line');
             document.getElementById('number-area').innerHTML = screenNum + '0' + addNum;
             newNum = false;
         } else if(screenNum != '0' && addNum != '.'|| (!screenNum.includes('.') && addNum === '.') || (addNum === '0' && screenNum.includes('.'))){
-            console.log('line below big ass line');
             document.getElementById('number-area').innerHTML = screenNum + addNum;
             newNum = false;
         }
@@ -68,7 +63,6 @@ function equals(){
     if(screenNum.includes('+')){
         const num1 = screenNum.substring(0,screenNum.indexOf('+'));
         const num2 = screenNum.substring(screenNum.indexOf('+')+1);
-        console.log(num2 === '');
         if(num2 === ''){
             document.getElementById('number-area').innerHTML = (parseFloat(num1));
         } else {
@@ -85,7 +79,6 @@ function equals(){
         }
     }
     if(screenNum.includes('*')){
-        console.log('equals called');
         const num1 = screenNum.substring(0,screenNum.indexOf('*'));
         const num2 = screenNum.substring(screenNum.indexOf('*')+1);
         if(num2 === ''){
@@ -95,7 +88,6 @@ function equals(){
         }
     }
     if(screenNum.includes('/')){
-        console.log('equals called');
         const num1 = screenNum.substring(0,screenNum.indexOf('/'));
         const num2 = screenNum.substring(screenNum.indexOf('/')+1);
         if(num2 === ''){
